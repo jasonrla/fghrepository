@@ -22,6 +22,6 @@ def home():
 
 #Request and Response Body
 
-@app.post("person/new")
+@app.post("/person/new")
 def create_person(person:Person = Body(...)):
     return person
